@@ -52,7 +52,7 @@ export default function SeatingArrangementPage(props) {
   };
 
   const backFromTableMenagment = async (table) => {
-    const oldTable = tables.find((t) => t.IDStola === table[0].IDStola);
+    const oldTable = tables.find((t) => t.IDStola === table[0]?.IDStola);
 
     if (table && !oldTable) {
       try {
